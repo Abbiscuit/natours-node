@@ -96,3 +96,15 @@ db.tours.deleteMany({})
 
 // 空白のオブジェクトの場合、全削除（※＊注意※＊）
 ```
+
+---
+
+### Mongoose
+
+CRUD
+
+```javascript: controller.js
+exports.createTour = async (req, res) => {
+  const newTour = await Tour.create(req.body);
+};
+```
