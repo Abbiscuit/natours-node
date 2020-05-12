@@ -13,15 +13,16 @@ mongoose
   .connect(DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    useCreateIndex: true,
   })
   .then((con) => {
     // console.log(con.connection);
-    console.log(`DB connection successful!!`);
+    console.log(`DB connection successful 🎊`);
   });
 
 // Server
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}....`);
+  console.log(`App running on port ${PORT}.... 🚀🚀🚀`);
 });
